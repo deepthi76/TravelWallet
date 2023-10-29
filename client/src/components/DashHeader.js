@@ -10,7 +10,7 @@ import '../styles/dashHeader.css'
         <NavLink to = "/Dashboard"><h3 className = "landing-name">S P L I T W I S E</h3></NavLink> 
      
      <div className = "Dashfloat">
-     <NavLink to = "/login"><button className = "logoutbtn" onClick = {()=>{
+     <NavLink to = "/"><button className = "logoutbtn" onClick = {()=>{
        localStorage.removeItem('jwtToken');
      }
      }>Log Out</button></NavLink>

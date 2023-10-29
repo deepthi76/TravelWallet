@@ -7,15 +7,16 @@ var obj = {};
  const SignUp = (props)=>{
    return(
    
-      <div className = "container signup">
-      
-      <div className = "signup-logo">
-    <img  src={require("../images/logo.png")} alt=""/>
-    </div>
+      <div className='main'>
+          <div className='overlay'></div>
+          <video src={require('../images/cappadocia.mp4')} autoPlay loop muted/>
+          <div className='login_name'>
+            
+          <h1 className = "landing-header"><img align="middle" className = "landing-logo" src={require('../images/logo1.png')} alt=""/> T r a v e l W a l l e t</h1>
+<br/><br/>
 
-
-    <div className = "signup-form">
-      <h3>INTRODUCE YOURSELF</h3>
+          <div className = "signup-form">
+          <h3>INTRODUCE YOURSELF</h3>
       <label htmlFor="">Hi there! My name is</label>
 
       <input id = "username" onChange = {(event)=>{
@@ -52,11 +53,11 @@ var obj = {};
        })}
      }} className = "btn">Sign me up!</button>
      
-   </div>
-
-
-
-   </div>
+                
+                
+            </div>
+          </div>
+        </div>
 
    
    )
